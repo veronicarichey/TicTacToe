@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pink: rgb(214, 30, 134);
+    --winning_blocks: rgb(250, 222, 242);;
+}
+
+body {
+    color: rgb(214, 30, 134);
+    font-family: "Over the Rainbow";
+}
+
+h1 {
+    font-size: 65px;
+}
+
+.container {
+    padding: 30px;
+    padding-top: 40px;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: antiquewhite;
+}
+.hidden {
+    display: none;
+ }
+#board {
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(214, 30, 134);
+    font-size: 120px;
+    border-right: 5px dotted;
+    border-bottom: 5px dotted;
+}
+
+.box:nth-child(3n) {
+    border-right: none;
+}
+
+.box:nth-child(6) ~ .box {
+    border-bottom: none;
+}
+
+button {
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color:rgb(214, 30, 134);
+    font-size: 20px;
+    transition: 200ms transform;
+    font-weight: 400;
+    color: antiquewhite;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 20, 145, 0.481);
+}
+
+
